@@ -56,6 +56,8 @@ body {
 
 #profile img {
   width: 112px;
+  border-radius: 50%;
+  outline: 2px solid var(--highlight-color);
 }
 
 #profile p {
@@ -208,7 +210,5 @@ footer a {
     left: 0;
   }
 }
-  
-
 
 /* Path: style.css */
