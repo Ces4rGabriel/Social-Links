@@ -85,11 +85,17 @@ body {
 
   transform: translateY(-50%);
   cursor: pointer;
+
+  animation: slideOut 0.2s ease-in-out;
 }
 
 .light #switch button {
-    left: initial;
-    right: 0;
+    animation: slideIn 0.2s ease-in-out forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+  transition: outline 0.2s;
 }
 
 #switch span {
@@ -184,6 +190,24 @@ footer a {
 }
 
 
+/*Animações*/
+@keyframes slideIn {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
   
 
 
